@@ -6,7 +6,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/"></Route>
+          <Route exact path="/">
+            This is the LinkedIn Clone
+          </Route>
         </Switch>
       </Router>
     </div>
