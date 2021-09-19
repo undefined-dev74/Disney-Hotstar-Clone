@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Login from './components/Login/Login';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            This is the LinkedIn Clone
+            <Login />
           </Route>
         </Switch>
       </Router>
