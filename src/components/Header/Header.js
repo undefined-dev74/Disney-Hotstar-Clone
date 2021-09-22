@@ -98,7 +98,9 @@ const Header = () => {
                 </span>
               </a>
 
-              <SignOut></SignOut>
+              <SignOut>
+                <a>SignOut</a>
+              </SignOut>
             </User>
             <Work>
               <a>
