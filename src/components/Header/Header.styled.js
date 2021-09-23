@@ -161,12 +161,32 @@ export const NavList = styled.li`
   }
 `;
 
-export const User = styled(NavList)``;
-export const Work = styled(User)`
-  border-left: 1px solid rgba(0, 0, 0, 0.8);
+export const SignOut = styled.div`
+  a {
+    color: #dce6f1;
+    font-weight: 600;
+  }
+  position: absolute;
+  top: 45px;
+  background: white;
+  border-radius: 0 0 5px 5px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  transition-duration: 160ms;
+  text-align: center;
+  display: none;
 `;
 
-export const SignOut = styled.div`
-
-psa
+export const User = styled(NavList)`
+  :hover {
+    ${SignOut} {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+`;
+export const Work = styled(User)`
+  border-left: 1px solid rgba(0, 0, 0, 0.8);
 `;
