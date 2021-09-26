@@ -45,12 +45,15 @@ export const Layout = styled.div`
   grid-template-areas: 'leftside main rightside';
   grid-template-columns: minmax(300px, 350px) 1fr 300px;
   row-gap: 25px;
+  column-gap: 25px;
   grid-template-rows: auto;
   margin: 25px 0;
+
+  padding: 0 40px;
 
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding: 0 5px;
+    padding: 0 10px;
   }
 `;
