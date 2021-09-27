@@ -1,5 +1,14 @@
 import React from 'react';
-import { Container, ShareBox } from './main.styled';
+import {
+  Article,
+  Container,
+  Description,
+  ShareBox,
+  SharedActor,
+  SharedImg,
+  SocialActions,
+  SocialCounts,
+} from './main.styled';
 
 const Main = () => {
   return (
@@ -8,7 +17,7 @@ const Main = () => {
         Share
         <div>
           <img
-            src="https://img-premium.flaticon.com/png/512/552/premium/552909.png?token=exp=1632635945~hmac=43cb80cce63f6edfaef28924ba623b7f"
+            src="https://cdn-icons-png.flaticon.com/512/560/560216.png"
             alt="UserIcon"
           />
           <button>start a post</button>
@@ -47,6 +56,86 @@ const Main = () => {
           </button>
         </div>
       </ShareBox>
+      <div>
+        <Article>
+          <SharedActor>
+            <a>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/599/599305.png  "
+                alt="UserIcon"
+              />
+              <div>
+                <span>Title</span>
+                <span>Info</span>
+                <span>Date</span>
+              </div>
+            </a>
+            <button>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/860/860760.png"
+                alt="Options"
+              />
+            </button>
+          </SharedActor>
+          <Description>
+            Description
+            <SharedImg>
+              <img
+                src="https://images.unsplash.com/photo-1459180129673-eefb56f79b45?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8am9ic3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="img"
+              />
+            </SharedImg>
+            <SocialCounts>
+              <li>
+                <button>
+                  <img
+                    src="https://static-exp1.licdn.com/sc/h/d310t2g24pvdy4pt1jkedo4yb"
+                    alt="Like"
+                  />
+                  <img
+                    src="https://static-exp1.licdn.com/sc/h/5thsbmikm6a8uov24ygwd914f"
+                    alt="clap"
+                  />
+                  <span>75</span>
+                </button>
+              </li>
+              <li>
+                <a>2 comments</a>
+              </li>
+            </SocialCounts>
+            <SocialActions>
+              <button>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/456/456115.png"
+                  alt="like"
+                />
+                <span>Like</span>
+              </button>
+              <button>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2190/2190552.png"
+                  alt="comments"
+                />
+                <span>Comments</span>
+              </button>
+              <button>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1828/1828874.png"
+                  alt="Share"
+                />
+                <span>Share</span>
+              </button>
+              <button>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/786/786407.png"
+                  alt="Send"
+                />
+                <span>Send</span>
+              </button>
+            </SocialActions>
+          </Description>
+        </Article>
+      </div>
     </Container>
   );
 };
